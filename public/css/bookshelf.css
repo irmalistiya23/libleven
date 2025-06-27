@@ -1,0 +1,152 @@
+main{
+    color: black;
+}
+p {
+    font-weight: 400;
+}
+
+body {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #94d2ff;
+    border-radius: 12px;
+}
+
+h1, h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.section {
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 30px;
+}
+
+.borrowed-section {
+    background-color: #fff08d; /* Warna soft orange */
+}
+
+.returned-section {
+    background-color: #94d2ff; /* Warna soft blue */
+    background-color: #fff08d;
+}
+
+.returned-section {
+    background-color: #94d2ff;
+    color: black;
+}
+
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+    height: 100%;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-img-top {
+    height: 250px;
+    object-fit: cover;
+}
+
+.card-body {
+    /* min-height: 200px; */
+    max-height: 250px;
+    text-align: center;
+    padding: 15px;
+}
+
+.card-title {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 14px;
+    color: #666;
+}
+
+.empty-state {
+    margin-top: 50px;
+    text-align: center;
+}
+
+.empty-image {
+    max-width: 200px;
+    margin-bottom: 15px;
+}
+
+.btn-light {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.btn-light i {
+    font-size: 18px;
+}
+.tab-container {
+    display: flex;
+    width: 100%;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 16px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.tab-btn {
+    flex: 1;
+    padding: 12px;
+    text-align: center;
+    cursor: pointer;
+    background-color: #e0e0e0;
+    border: none;
+    font-weight: bold;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.tab-btn.active.borrowed {
+    background-color: #fff08d;
+    color: #d6852f;
+}
+
+.tab-btn.active.returned {
+    background-color: #94d2ff;
+    color: #2f99d6;
+}
+
+.tab-content {
+    display: none;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.tab-content.active {
+    display: block;
+}
+
+.body-borrowed {
+    background-color: #ffffff;
+}
+
+.body-returned {
+    background-color: #ffffff;
+}

@@ -1,0 +1,80 @@
+body {
+    background-color: white;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    margin: 20px;
+}
+
+/* Judul Halaman */
+h2 {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Tabel Laporan - Tampilan ringan */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    color: black;
+}
+
+thead th {
+    text-align: left;
+    font-weight: 600;
+    font-size: 0.95rem;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Isi Tabel */
+tbody td {
+    padding: 10px;
+    font-size: 0.9rem;
+    border-bottom: 1px solid #eee;
+}
+
+tbody tr:last-child td {
+    border-bottom: none;
+}
+
+/* Zebra Stripes Ringan */
+tbody tr:nth-child(odd) {
+    background-color: #fafafa;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #fff;
+}
+
+/* Tombol */
+button {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button:hover {
+    background-color: #bb2d3b;
+}
+
+/* Alert Sukses */
+.alert-success {
+    background-color: #d1f7e3;
+    border: 1px solid #b6f0d0;
+    padding: 10px 15px;
+    border-radius: 6px;
+    color: #155724;
+    margin-bottom: 20px;
+}
+
+/* Paragraf Info */
+p {
+    font-weight: 500;
+    font-size: 1rem;
+    margin-top: 10px;
+}

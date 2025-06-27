@@ -1,0 +1,55 @@
+
+
+h3, label, td{
+    color: black;
+    font-weight: 500;
+
+}
+
+.judul-peminjaman {
+    font-weight: bold;
+    font-size: 2rem;
+    color: #333;
+}
+
+.table-header {
+    background-color: #007bff;
+    color: white;
+}
+
+.user-avatar {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.btn-pinjam {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 0.9rem;
+    padding: 6px 12px;
+}
+
+.data-kosong {
+    color: #6c757d;
+    padding: 40px 0;
+    font-size: 1.2rem;
+}
+
+.kosong-icon {
+    font-size: 2.5rem;
+}
+
+.kosong-text {
+    margin-top: 10px;
+    font-weight: 500;
+}
+
+.borrow-field {
+    color: rgb(231, 185, 0);
+}
+.return-field {
+    color: rgb(0, 117, 51);
+}

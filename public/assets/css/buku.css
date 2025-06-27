@@ -1,0 +1,191 @@
+
+/* ====== Global Styles ====== */
+main {
+    font-weight: 500;
+    background-color: white;
+    color: black;
+}
+
+p {
+    font-weight: 400;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+/* ====== Book Cover ====== */
+.book-cover-container {
+    position: relative;
+    width: 100%;
+    max-width: 300px;
+    height: 450px;
+    overflow: hidden;
+}
+
+.book-cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 8px;
+}
+.favorite-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 50%;
+    padding: 10px;
+}
+.reviews .review-container {
+    max-height: 300px;
+    overflow-y: auto;
+        z-index: 10;
+
+}
+
+
+/* ====== Other Book Item ====== */
+.other-book-item {
+    width: 100%;
+    max-width: 180px;
+    margin: 0 auto;
+}
+
+.other-book-cover-container {
+    width: 100%;
+    height: 250px;
+    overflow: hidden;
+}
+
+.other-book-cover-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ====== Book Info ====== */
+.book-info {
+    padding-top: 10px;
+}
+
+.book-title {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    line-height: 1.3;
+}
+
+.book-author {
+    font-weight: 400;
+    color: black;
+    font-size: 0.9rem;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+}
+
+.book-category .badge,
+.categories .badge {
+    font-weight: 400;
+    font-size: 0.75rem;
+    background-color: #8de3ff !important;
+    color: black;
+}
+
+/* ====== Buttons ====== */
+.btn-pinjam {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-pinjam:hover {
+    background-color: #8de3ff;
+    color: #000;
+}
+
+.btn-dipinjam {
+    background-color: #8de3ff;
+    color: #000;
+}
+
+.btn-dipinjam:hover {
+    background-color: #ffc107;
+    color: #000;
+}
+
+.btn-allreviews {
+    background-color: #8de3ff;
+    color: black;
+    transition: background-color 0.3s ease;
+}
+
+.btn-allreviews:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
+/* Tetap berwarna biru saat active, meskipun sedang tidak di-hover */
+.btn-allreviews.active {
+    background-color: #8de3ff;
+    color: black;
+}
+
+/* Saat tab aktif di-hover, tetap berubah jadi kuning */
+.btn-allreviews.active:hover {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-close {
+    background-color: #ffc107;
+    color: black;
+}
+
+.btn-close:hover {
+    background-color: #88ddee;
+    color: black;
+}
+
+/* ====== Star Rating (Default & Modal) ====== */
+.star-rating,
+.modal .star-rating {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+}
+
+.star-label,
+.modal .star-rating label {
+    cursor: pointer;
+    padding: 0 2px;
+    font-size: 24px;
+    color: #ddd; /* Warna default sebelum interaksi */
+    transition: color 0.2s;
+}
+
+/* Hover & Checked State */
+.star-label:hover,
+.star-label:hover ~ .star-label,
+.star-rating input[type="radio"]:checked ~ .star-label,
+.modal .star-rating label:hover,
+.modal .star-rating label:hover ~ label,
+.modal .star-rating input[type="radio"]:checked ~ label {
+    color: #ffc107 !important; /* Pastikan bintang tetap kuning */
+}
+
+.star-rating input[type="radio"]:checked + .star-label,
+.modal .star-rating input[type="radio"]:checked + label {
+    color: #ffc107 !important; /* Pastikan bintang yang terpilih tetap kuning */
+}
+
+/* ====== Static Star Display ====== */
+.stars .fas.fa-star,
+.stars .fas.fa-star-half-alt,
+.stars .far.fa-star {
+    font-size: 20px;
+    margin-right: 2px;
+    color: #ffc107 !important; /* Pastikan bintang ini selalu kuning */
+}

@@ -1,0 +1,121 @@
+/* General */
+body {
+    background-color: #f8f9fa;
+    color: black;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #94d2ff;
+    border-radius: 12px;
+}
+
+/* Typography */
+h1 {
+    text-align: center;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 30px;
+}
+
+/* Card Style */
+.book-card {
+    height: 10px !important; /* Lebih pendek agar tampak kotak */
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: transform 0.2s ease-in-out;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.book-card:hover {
+    transform: scale(1.05);
+}
+
+.book-card img {
+    height: 140px;
+    object-fit: cover;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    width: 100%;
+}
+
+.book-card .card-body {
+    padding: 10px 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.book-card .card-title {
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.book-card .card-text {
+    font-size: 12px;
+    color: #555;
+    line-height: 1.2em;
+    max-height: 10px; /* sekitar 2 baris teks */
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/* Tombol */
+.btn-light {
+    border: 1px solid #ddd;
+    padding: 10px 20px;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    background-color: white;
+    color: #000;
+    transition: background-color 0.2s ease-in-out;
+}
+
+.btn-light:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-primary {
+    font-size: 14px;
+}
+
+/* Empty state */
+.empty-state {
+    margin-top: 80px;
+    text-align: center;
+}
+
+/* Modal Styling */
+.modal-body img {
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+@media (max-width: 768px) {
+    .book-card img {
+        height: 140px !important;
+    }
+
+    .modal-body {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .modal-body img {
+        margin-bottom: 15px;
+    }
+
+    .modal-body .ms-md-4 {
+        margin-left: 0 !important;
+    }
+}

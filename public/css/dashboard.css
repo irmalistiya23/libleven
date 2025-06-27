@@ -1,0 +1,67 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    background-color: #f8f9fa;
+}
+.container-dashboard {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 kolom */
+    grid-template-rows: repeat(2, auto);  /* 2 baris */
+    gap: 20px;
+    max-width: 600px; /* Supaya nggak kepanjangan di layar gede */
+    width: 100%;
+    justify-content: center;
+}
+
+.card {
+    width: 100%;
+    padding: 20px;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+}
+
+.card i {
+    font-size: 40px;
+    margin-bottom: 10px;
+<<<<<<< HEAD
+    color: #007bff;
+=======
+    color: #8de3ff;
+>>>>>>> preview
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 22px;
+}
+
+.card p {
+    font-weight: 600;
+    font-size: 2rem;
+    color: #555;
+}
+
+/* Responsive biar tetap bagus di HP */
+@media (max-width: 600px) {
+    .card-container {
+        grid-template-columns: 1fr; /* Jadi 1 kolom kalau layar kecil */
+    }
+}

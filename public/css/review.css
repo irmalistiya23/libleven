@@ -1,0 +1,13 @@
+.additional-reviews {
+    display: none;
+    transition: all 0.3s ease;
+}
+
+.show-more-btn {
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.show-more-btn:hover {
+    opacity: 0.8;
+} 

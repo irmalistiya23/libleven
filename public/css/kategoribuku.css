@@ -1,0 +1,58 @@
+/* Style untuk elemen utama */
+main {
+    background-color: white;
+    color: black;
+}
+
+/* Style untuk teks di dalam tabel */
+td {
+    color: black;
+    font-weight: 400;
+}
+
+/* Style untuk label form */
+.form-check-label, .form-label {
+    font-weight: 500;
+}x
+
+/* Style untuk tombol primary */
+.btn-primary {
+    background: linear-gradient(45deg, #8de3ff, #8de3ff);
+    border: none;
+    box-shadow: 0 2px 6px rgba(0, 123, 255, 0.3);
+    color: black;
+}
+
+/* Style untuk tombol primary ketika di hover */
+.btn-primary:hover {
+    background: linear-gradient(45deg, #ffc107, #ffc107);
+    transform: translateY(-2px);
+    color: black;
+}
+
+/* Style untuk badge kategori buku */
+.badge {
+    font-size: 0.9rem;
+    font-weight: 600;
+    margin-right: 5px;
+    background-color: #8de3ff;
+    color: black;
+}
+
+.mb-3 {
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.custom-btn {
+    background-color: #8de3ff;
+    color: black;
+    border: none;
+}
+
+.custom-btn:hover {
+    background-color: #ffc107;
+    color: black;
+}
+

@@ -1,0 +1,124 @@
+/* Styling container utama */
+body{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* Styling kartu profil */
+.account-card {
+    border: 5px solid #fff08d;
+    background: white;
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 5px 8px 20px rgba(251, 255, 128, 0.1);
+    width: 650px;
+    text-align: center;
+}
+
+/* Styling foto profil */
+.avatar-container {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.avatar {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    border: 3px solid #ccc;
+    object-fit: cover;
+}
+
+.edit-photo {
+    background: #f8f9fa;
+    border: none;
+    padding: 6px 12px;
+    margin-top: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    border-radius: 5px;
+    display: inline-block;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.edit-photo:hover {
+    background: #e3e6ea;
+}
+
+/* Styling form */
+.form-group {
+    position: relative;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    padding-left: 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    background: #f9f9f9;
+}
+
+.form-group input:focus {
+    border-color: #007bff;
+    background: #ffffff;
+}
+
+/* Icon dalam input */
+.form-group i {
+    position: absolute;
+    left: 12px;
+    top: 38px;
+    color: #666;
+    font-size: 16px;
+}
+
+/* Style form row agar responsif */
+.form-row {
+    display: flex;
+    gap: 15px;
+}
+
+.form-row .form-group {
+    flex: 1;
+}
+
+/* Styling tombol */
+.save-btn {
+    background: #89bcff;
+    padding: 12px;
+    margin-top: 15px;
+    border: none;
+    width: auto;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+.save-btn:hover {
+    background: #fff08d;
+}
+
+label{
+    color: #000000;
+}
